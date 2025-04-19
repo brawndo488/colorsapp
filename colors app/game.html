@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Game - Play</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page" id="game">
+        <nav>
+            <button class="home-btn" id="homeBtnGame">Home</button>
+        </nav>
+
+        <div class="game-controls">
+            <label for="itemSelector">Select Item:</label>
+            <select id="itemSelector">
+                </select>
+        </div>
+
+        <div class="game-area">
+            <div class="game-grid">
+                <div class="color-square" id="green" data-color="green"></div>
+                <div class="color-square" id="yellow" data-color="yellow"></div>
+                <div class="color-square" id="red" data-color="red"></div>
+                <div class="color-square" id="blue" data-color="blue"></div>
+            </div>
+             <div class="image-overlay" id="imageOverlay">
+                <img id="successImage" src="" alt="Success!">
+            </div>
+        </div>
+
+        <audio id="bellSound" src="sounds/bell.mp3" preload="auto"></audio>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
